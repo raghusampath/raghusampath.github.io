@@ -1,34 +1,50 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="vendors/jquery.easings.min.js"></script>
 		<script type="text/javascript" src="jquery.fullPage.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		
 
 		<script type="text/javascript">
 			$(document).ready(function() {
     			$('#fullpage').fullpage({
-    				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+    				sectionsColor: ['#8FB98B', '#4BBFC3', '#7BAABE', 'whitesmoke'],
     				css3:true
     				});
 			});
 		</script>
 		<style type="text/css">
-			.section{
+		@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+		@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+			#intro{
 				text-align: center;
 				font-family: 'Roboto',sans-serif;
 				font-size: 48px;
 			}
+			#aboutme{
+				font-family: 'Roboto',sans-serif;
+				text-align: center;
+				font-size: 24px;
+				font-weight: 200;
+			}
 		</style>
 	</head>	
 		<body>
+			
 			<div id="fullpage">
-			    <div class="section">
+			    <div class="section" id="intro">
 			    	<p>Hey there,<br> I am <strong>Raghu</strong>.
 			    </div>
-			    <div class="section">Some section</div>
+			    <div class="section" id="aboutme">
+
+			    	<p>
+			    		<strong>about me</strong> I am an <strong>account executive</strong> at <a href="www.2adpro.com">2adpro</a>
+			    	</p>
+
+
+			    </div>
 			    <div class="section">Some section</div>
 			    <div class="section">Some section</div>
 			</div>
